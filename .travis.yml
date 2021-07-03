@@ -2,3 +2,9 @@ language: java
 dist: trusty
 jdk:
   - openjdk8
+addons:
+  apt:
+    packages:
+      - openjdk8-installer
+before_install:
+  - chmod +x mvnw
